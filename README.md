@@ -1,8 +1,24 @@
 # Reproduction
 
-The nextjs version is latest canary (13.4.10-canary.6). I believe the issue was introduced in -canary.3
+There are 2 issues:
 
-1. pnpm install
-2. npx sst deploy --stage dev
-3. wait for deployment and go to the CF url
-4. See Internal Server Error
+# First issue:
+
+Modal interception with a single \[dynamic\] route does not work
+
+1. cd packages/web
+2. npm i
+3. npm run dev
+4. go to [locahost:3000](http://localhost:3000)
+5. follow instructions on page
+
+# Second issue:
+
+I think this introduced the issue: https://github.com/vercel/next.js/pull/52746
+Nextjs now adds the "next-url" headers to the vary header. This breaks modal interception on CloudFront apps.
+
+1. Configure .aws/credentiasl w/ valid AWS creds
+2. pnpm install
+3. npx sst deploy --stage repo
+4. click on /fotos
+5. modal does not work
