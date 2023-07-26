@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "sst bind next dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -13,14 +13,11 @@
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
     "autoprefixer": "10.4.14",
-    "next": "13.4.10-canary.6",
+    "next": "13.4.13-canary.0",
     "postcss": "8.4.25",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.2",
     "typescript": "^5.1.6"
-  },
-  "devDependencies": {
-    "sst": "^2.20.1"
   }
 }
