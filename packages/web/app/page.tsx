@@ -7,11 +7,15 @@ export default function Home() {
     <div>
       <Link href="/photos">/Photos</Link>
     </div>
+    <hr />
 
     <p>The /fotos has 2 levels of dynamic routes: /fotos/[author]/[title]
       When you navigate to `/fotos/author/hello`, the modal interception works
     </p>
     <div><Link href="/fotos">/Fotos</Link></div>
 
+    <hr />
+    <p>Server Actions </p>
+    <div><Link href="/sa">/sa</Link></div>
   </div>
 }
