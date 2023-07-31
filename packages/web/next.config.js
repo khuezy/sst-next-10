@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: 'standalone',
-  outputFileTracing: '.',
+  output: "standalone",
+  outputFileTracing: ".",
   experimental: {
     appDir: true,
     serverActions: true,
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
