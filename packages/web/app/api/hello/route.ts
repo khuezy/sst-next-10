@@ -11,6 +11,6 @@ export async function GET() {
   const data = await bacon.json();
   return NextResponse.json({
     hello: "worlds",
-    data,
+    time: data.utc_datetime,
   });
 }
